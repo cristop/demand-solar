@@ -19,5 +19,8 @@ footer .image {
   text-align: center;
 }
 footer .image img {
-  width: 300px;
+  width: 240px;
+  filter: brightness(0) invert(1);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
