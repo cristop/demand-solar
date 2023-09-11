@@ -42,8 +42,10 @@ header:after{
 header .container-fluid{
   position: relative;
 }
-header nav.menu-main{
+header nav.menu-main, .texto{
   float: right;
+  font-size: 16px;
+  color: #666666;
 }
 
 @media screen and (max-width:900px){

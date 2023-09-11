@@ -1,8 +1,23 @@
-footer{
-	padding-bottom: 20px;
-	padding-top: 50px;
-	font-size: 0.7rem;
-	line-height: 1.7;
-	border-top: 1px solid #eee;
-	background-color: #F7F7F7;
+footer {
+  /* padding-bottom: 20px; */
+  /* padding-top: 20px; */
+  font-size: 0.7rem;
+  line-height: 1.7;
+  border-top: 1px solid #eee;
+  background: rgb(0, 168, 233);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 168, 233, 1) 0%,
+    rgba(1, 165, 230, 1) 11%,
+    rgba(5, 154, 222, 1) 24%,
+    rgba(11, 137, 208, 1) 35%,
+    rgba(19, 113, 188, 1) 60%,
+    rgba(37, 60, 146, 1) 100%
+  );
+}
+footer .image {
+  text-align: center;
+}
+footer .image img {
+  width: 300px;
 }

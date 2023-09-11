@@ -24,16 +24,57 @@ section#home-inicio{
 }
 section#home-inicio .menu-info{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
 }
 section#home-inicio .menu-info .menu-left{
-    background-color: #253C92;
+    /* background-color: #253C92; */
+    width: fit-content;
+    /* padding: 15px; */
+    margin-right: 30px;
+}
+section#home-inicio .menu-info .menu-left ul{
+	padding: 30px 20px;
+	margin-top: 0;
+	border-radius: 50px;
+	background: rgb(0,168,233);
+	background: linear-gradient(180deg, rgba(0,168,233,1) 0%, rgba(1,165,230,1) 11%, rgba(5,154,222,1) 24%, rgba(11,137,208,1) 35%, rgba(19,113,188,1) 60%, rgba(37,60,146,1) 100%);
 }
 section#home-inicio .menu-info .menu-left li{
     list-style: none;
     margin-bottom: 15px;
 }
-section#home-inicio .container{ 
+section#home-inicio .items-info-right{}
+section#home-inicio .items-info-right .item{
+}
+section#home-inicio .items-info-right .item .bg{
+    padding: 39px 30px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 6%);
+}
+section#home-inicio .items-info-right > :last-child{
+	width: 100%;
+}
+section#home-inicio .items-info-right .titulo_flex{
+    text-align: center;
+    color: #29AAE1;
+    font-weight: 600;
+    font-size: 17px;
+}
+section#home-inicio .menu-info .info-right .titulo{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #4D4D4D;
+    text-align: right;
+}
+section#home-inicio .menu-info .info-right .titulo span{
+	color: #FF9411;
+}
+section#home-inicio .menu-info .info-right > :first-child{
+    position: relative;
 }
 @media screen and (max-width:900px){
 section#home-inicio .bg-image{}
