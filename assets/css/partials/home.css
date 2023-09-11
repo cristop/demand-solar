@@ -1,0 +1,8 @@
+.home-spot{
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.home-spot .container{
+	height: 100vh;
+}
