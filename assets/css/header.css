@@ -25,7 +25,6 @@ header.sticky {
   top: 0;
   width: 100%;
   background-color: #fff;
-  border-bottom: 1px solid #E6EAEA;
   visibility: visible !important;
 }
 header.sticky.headerInternal{
