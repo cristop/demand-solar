@@ -266,3 +266,45 @@ header .logo-center{
     top: -70px;
   }
 }
+
+
+/***********************************/
+/***** MENU *******/
+
+section#home-inicio .menu-info{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+section#home-inicio .menu-info .menu-left{
+    /* background-color: #253C92; */
+    width: fit-content;
+    /* padding: 15px; */
+    margin-right: 30px;
+}
+
+section#home-inicio .menu-info .menu-left ul{
+	padding: 30px 20px;
+	margin-top: 0;
+	border-radius: 50px;
+	background: rgb(0,168,233);
+	background: linear-gradient(180deg, rgba(0,168,233,1) 0%, rgba(1,165,230,1) 11%, rgba(5,154,222,1) 24%, rgba(11,137,208,1) 35%, rgba(19,113,188,1) 60%, rgba(37,60,146,1) 100%);
+}
+
+section#home-inicio .menu-info .menu-left li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+section#home-inicio .menu-info .menu-left li a {
+    display: block;
+}
+
+@media screen and (max-width:900px){
+  section#home-inicio .menu-info{
+  
+  section#home-inicio .menu-info .menu-left{}
+    
+  section#home-inicio .menu-info .menu-left ul{}
+    
+  section#home-inicio .menu-info .menu-left li{}
+}
