@@ -26,6 +26,7 @@ header.sticky {
   width: 100%;
   background-color: #fff;
   visibility: visible !important;
+  z-index: 999;
 }
 header.sticky.headerInternal{
   background-color: #fff !important;
@@ -279,25 +280,80 @@ section#home-inicio .menu-info .menu-left{
     /* background-color: #253C92; */
     width: fit-content;
     /* padding: 15px; */
-    margin-right: 30px;
+    margin-right: 80px;
+    position: relative;
+    z-index: 99;
 }
 
 section#home-inicio .menu-info .menu-left ul{
-	padding: 30px 20px;
+	padding: 20px 0;
 	margin-top: 0;
-	border-radius: 50px;
+	border-radius: 35px;
 	background: rgb(0,168,233);
 	background: linear-gradient(180deg, rgba(0,168,233,1) 0%, rgba(1,165,230,1) 11%, rgba(5,154,222,1) 24%, rgba(11,137,208,1) 35%, rgba(19,113,188,1) 60%, rgba(37,60,146,1) 100%);
 }
 
 section#home-inicio .menu-info .menu-left li{
     list-style: none;
-    margin-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 section#home-inicio .menu-info .menu-left li a {
     display: block;
+    text-decoration: none;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
 }
+
+section#home-inicio .menu-info .menu-left li a > * {
+    -webkit-transition: all 0.2s ease;  
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;  
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+section#home-inicio .menu-info .menu-left li a img {
+    height: 25px;
+    width: 25px;
+    z-index: 1;
+    display: block;
+    position: relative;
+    object-fit: contain;
+    object-position: center;
+}
+
+section#home-inicio .menu-info .menu-left li a span {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--c-secondary);
+    position: absolute;
+    background-color: white;
+    padding: 14px 16px;
+    padding-left: 50px;
+    border-radius: 20px;
+    white-space: nowrap;
+    left: 16px;
+    top: -9px;
+    z-index: 0;
+    opacity: 0;
+    letter-spacing: -10px;
+    text-indent: -10px;
+}
+
+section#home-inicio .menu-info .menu-left li a:hover span{
+  opacity: 1;
+  letter-spacing: initial;
+  text-indent: initial;
+}
+
+section#home-inicio .menu-info .menu-left li a:hover img{
+  filter: brightness(0) invert(58%) sepia(92%) saturate(1277%) hue-rotate(165deg) brightness(91%) contrast(92%);
+}
+
+
 
 @media screen and (max-width:900px){
   section#home-inicio .menu-info{
