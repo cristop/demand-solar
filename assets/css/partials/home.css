@@ -27,7 +27,9 @@ section#home-inicio{
 
 
 
-section#home-inicio .items-info-right{}
+section#home-inicio .items-info-right{
+	
+}
 
 section#home-inicio .items-info-right .item{
 	position: relative;
@@ -107,8 +109,48 @@ section#home-inicio .menu-info .info-right > :first-child .image img {
     object-fit: cover;
 }
 @media screen and (max-width:900px){
-section#home-inicio .bg-image{}
-section#home-inicio .bg-image img{}
-section#home-inicio{}
-section#home-inicio .container{}
+	section#home-inicio .bg-image img{}
+	
+	section#home-inicio .bg-image{}
+	
+	section#home-inicio{}
+	
+	section#home-inicio .items-info-right{}
+	
+	section#home-inicio .items-info-right .item{}
+	
+	section#home-inicio .items-info-right .item:hover {}
+	
+	section#home-inicio .items-info-right .item a {}
+	
+	section#home-inicio .items-info-right .item .bg{
+	    margin: 0;
+	}
+	
+	section#home-inicio .items-info-right > :last-child{}
+	
+	section#home-inicio .items-info-right .titulo_flex{}
+	
+	section#home-inicio .menu-info .info-right .titulo{
+	    width: 100%;
+	    border-radius: 0;
+	    position: initial;
+	}
+	
+	section#home-inicio .menu-info .info-right .titulo span{}
+	
+	section#home-inicio .menu-info .info-right > :first-child{
+	    position: relative;
+	    margin-bottom: 40px;
+	}
+	
+	section#home-inicio .menu-info .info-right > :first-child .image {
+	    border-radius: 0;
+	    /* margin-left: -15px; */
+	    /* margin-right: -15px; */
+	}
+	
+	section#home-inicio .menu-info .info-right > :first-child .image img {
+	    height: 160px;
+	}
 }
