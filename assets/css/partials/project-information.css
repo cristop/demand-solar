@@ -1,7 +1,7 @@
 .customer-date {
     gap: 15px;
     display: grid;
-    grid-template-columns: 200px auto 1fr;
+    grid-template-columns: 200px 0.7fr 1fr;
     padding-bottom: 50px;
 }
 
@@ -20,6 +20,13 @@
 .customer-date .dates {
 }
 
+.customer-date .dates img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
 .customer-date .location {
     overflow: hidden;
     border-radius: 20px;
@@ -34,6 +41,20 @@
 
 .table-actions td {
     border-top: 2px solid #666666;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.table-actions tr:last-child td {
+    border-bottom: 2px solid #666666;
+}
+
+.table-actions td:first-child {
+    padding-left: 18px;
+}
+
+.table-actions td:last-child {
+    padding-right: 18px;
 }
 
 .table-actions table {
@@ -52,4 +73,32 @@
 .table-actions h5 {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.footer-table {
+    background-color: #CBCBCB;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 3px;
+}
+
+.footer-table a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    display: inline-flex;
+    background-color: #989898;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.footer-table a:hover{
+    color: white;
+    background-color: #787878
 }
