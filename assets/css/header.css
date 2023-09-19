@@ -272,18 +272,18 @@ header .logo-center{
 /***********************************/
 /***** MENU *******/
 
-section#home-inicio .menu-info{
+.menu-info{
     display: grid;
     grid-template-columns: 160px 1fr;
 }
-section#home-inicio .menu-info .menu-left{
+.menu-info .menu-left{
     /* background-color: #253C92; */
     width: fit-content;
     position: relative;
     z-index: 99;
 }
 
-section#home-inicio .menu-info .menu-left ul{
+.menu-info .menu-left ul{
 	padding: 20px 0;
 	margin-top: 0;
 	border-radius: 35px;
@@ -298,13 +298,13 @@ section#home-inicio .menu-info .menu-left ul{
     transition: all 0.2s ease;
 }
 
-section#home-inicio .menu-info .menu-left li{
+.menu-info .menu-left li{
     list-style: none;
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
-section#home-inicio .menu-info .menu-left li a {
+.menu-info .menu-left li a {
     display: block;
     text-decoration: none;
     position: relative;
@@ -312,7 +312,7 @@ section#home-inicio .menu-info .menu-left li a {
     padding-right: 30px;
 }
 
-section#home-inicio .menu-info .menu-left li a > * {
+.menu-info .menu-left li a > * {
     -webkit-transition: all 0.2s ease;  
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;  
@@ -320,7 +320,7 @@ section#home-inicio .menu-info .menu-left li a > * {
     transition: all 0.2s ease;
 }
 
-section#home-inicio .menu-info .menu-left li a img {
+.menu-info .menu-left li a img {
     height: 25px;
     width: 25px;
     z-index: 1;
@@ -330,7 +330,7 @@ section#home-inicio .menu-info .menu-left li a img {
     object-position: center;
 }
 
-section#home-inicio .menu-info .menu-left li a span {
+.menu-info .menu-left li a span {
     font-size: 14px;
     font-weight: bold;
     color: var(--c-secondary);
@@ -348,13 +348,13 @@ section#home-inicio .menu-info .menu-left li a span {
     text-indent: -10px;
 }
 
-section#home-inicio .menu-info .menu-left li a:hover span{
+.menu-info .menu-left li a:hover span{
   opacity: 1;
   letter-spacing: initial;
   text-indent: initial;
 }
 
-section#home-inicio .menu-info .menu-left li a:hover img{
+.menu-info .menu-left li a:hover img{
   filter: brightness(0) invert(58%) sepia(92%) saturate(1277%) hue-rotate(165deg) brightness(91%) contrast(92%);
 }
 
@@ -379,18 +379,18 @@ section#home-inicio .menu-info .menu-left li a:hover img{
     display: none;
   }
 
-  section#home-inicio .menu-info{
+  .menu-info{
       grid-template-columns: 1fr;
   }
     
-    section#home-inicio .menu-info .menu-left{
+    .menu-info .menu-left{
       position: fixed;
       top: 0;
       right: 0;
       z-index: 999;
   }
   
-  section#home-inicio .menu-info .menu-left ul{
+  .menu-info .menu-left ul{
     background: var(--c-terciary);
     border-radius: 0;
     margin: 0;
@@ -406,19 +406,19 @@ section#home-inicio .menu-info .menu-left li a:hover img{
     position: initial;
   }
 
-  section#home-inicio .menu-info .menu-left.menu-open ul {
+  .menu-info .menu-left.menu-open ul {
       opacity: 1;
       pointer-events: initial;
   }
   
-  section#home-inicio .menu-info .menu-left li{
+  .menu-info .menu-left li{
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 20px;
     padding-right: 20px;
   }
   
-  section#home-inicio .menu-info .menu-left li a {
+  .menu-info .menu-left li a {
     border-bottom: 1px solid white;
     padding-left: 15px;
     padding-right: 40px;
@@ -426,13 +426,13 @@ section#home-inicio .menu-info .menu-left li a:hover img{
     padding-bottom: 10px;
   }
   
-  section#home-inicio .menu-info .menu-left li a > * {}
+  .menu-info .menu-left li a > * {}
   
-  section#home-inicio .menu-info .menu-left li a img {
+  .menu-info .menu-left li a img {
     display: none;
   }
   
-  section#home-inicio .menu-info .menu-left li a span {
+  .menu-info .menu-left li a span {
     opacity: 1;
     letter-spacing: initial;
     text-indent: initial;
@@ -446,9 +446,9 @@ section#home-inicio .menu-info .menu-left li a:hover img{
     line-height: 1.3;
   }
   
-  section#home-inicio .menu-info .menu-left li a:hover span{}
+  .menu-info .menu-left li a:hover span{}
   
-  section#home-inicio .menu-info .menu-left li a:hover img{}
+  .menu-info .menu-left li a:hover img{}
 
   #burguer-menu{
     display: block;

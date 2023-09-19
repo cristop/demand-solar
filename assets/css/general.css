@@ -34,6 +34,8 @@ body {
   color: #000;
   margin: 0;
   background-image: linear-gradient(180deg, #ffffff 25%, rgba(0,0,0,0.2) 100%);
+  min-height: 100vh;
+  padding-top: 110px;
 }
 
 
@@ -131,6 +133,7 @@ select {
   margin-top: 0;
   margin-bottom: 20px;
   display: block;
+  margin: 0;
 }
 
 .subtitle {
@@ -154,4 +157,82 @@ select {
   padding-left: 0;
   padding-right: 0;
   /* margin: 0; */
+}
+
+.internal-header {
+    background-color: #999;
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+
+.internal-header .title {
+    background-color: #fff;
+    width: fit-content;
+    margin-left: auto;
+    text-align: right;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 40px;
+}
+
+.internal-header .title svg {
+    position: absolute;
+    height: 150%;
+    left: -33px;
+    top: -20%;
+    fill: white;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.internal-header .title img {
+    /* display: block; */
+    position: relative;
+    z-index: 2;
+}
+
+.internal-header span {
+    margin: 0;
+    font-size: 20px;
+    display: block;
+    color: #4D4D4D;
+    text-align: right;
+    position: relative;
+}
+
+.gray-container {
+    padding: 25px 50px;
+    background-color: #F1F1F1;
+    border-radius: 25px;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.gray-container a {
+    color: var(--c-secondary);
+}
+
+.gray-container a:hover {
+    color: #000;
+}
+
+.gray-container .section-title {
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+.gray-container .section-title > div:last-child {
+    text-align: right;
+}
+
+.gray-container .flex > div {
+    padding: 0;
+}
+
+.gray-container h5 {
+    margin: 0;
+    color: #666666;
+    font-size: 20px;
 }

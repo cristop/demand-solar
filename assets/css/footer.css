@@ -14,6 +14,7 @@ footer {
     rgba(19, 113, 188, 1) 60%,
     rgba(37, 60, 146, 1) 100%
   );
+  margin-top: 50px;
 }
 footer .image {
   text-align: center;
