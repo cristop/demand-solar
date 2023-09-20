@@ -1,11 +1,9 @@
 .customer-date {
-    gap: 15px;
+    gap: 30px 15px;
     display: grid;
     grid-template-columns: 200px 0.7fr 1fr;
     padding-bottom: 50px;
 }
-
-.customer-date.flex {}
 
 .customer-date .pic {
 }
@@ -33,29 +31,49 @@
     font-size: 0;
 }
 
+.customer-date .location img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .table-actions {
     background-color: white;
-    border-radius: 25px;
+    border-radius: 30px;
     padding: 30px 5px;
 }
 
 .table-actions td {
     border-top: 2px solid #666666;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+.table-actions td.actions {
+    text-align: right;
+}
+
+.table-actions td.actions a {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.table-actions td.actions img {
+    width: 25px;
+    height: 25px;
 }
 
 .table-actions tr:last-child td {
     border-bottom: 2px solid #666666;
+    position: relative;
+    padding-right: 15px;
 }
 
 .table-actions td:first-child {
-    padding-left: 18px;
+    padding-left: 15px;
 }
 
-.table-actions td:last-child {
-    padding-right: 18px;
-}
+.table-actions td:last-child {text-align: right;}
 
 .table-actions table {
     width: 100%;
@@ -68,10 +86,12 @@
     margin: 0;
     font-size: 12px;
     color: #000;
+    position: absolute;
+    top: 10px;
 }
 
 .table-actions h5 {
-    padding-left: 20px;
+    padding-left: 15px;
     padding-right: 20px;
 }
 
@@ -101,4 +121,62 @@
 .footer-table a:hover{
     color: white;
     background-color: #787878
+}
+
+@media screen and (max-width: 900px) {
+    .customer-date {
+        grid-template-columns: 200px 1fr;
+    }
+    .customer-date .pic {}
+    .customer-date .pic img {}
+    .customer-date .dates {}
+    .customer-date .dates img {}
+    .customer-date .location {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .table-actions {
+        overflow: hidden;
+        width: 100%;
+    }
+    .table-actions td {}
+    .table-actions td.actions {
+        white-space: nowrap;
+    }
+    .table-actions td.actions a {}
+    .table-actions td.actions img {}
+    .table-actions tr:last-child td {}
+    .table-actions td:first-child {}
+    .table-actions td:last-child {}
+    .table-actions table {
+    /* display: block; */
+}
+    .table-actions table .subtitle {
+        white-space: nowrap;
+    }
+    .table-actions h5 {}
+    .footer-table {}
+    .footer-table a {}
+    .footer-table a:hover{}
+
+    .mask-table-mobile{
+    /* width: 50%; */
+    overflow-x: auto;
+}
+}
+
+@media screen and (max-width: 450px) {
+    .customer-date{
+        grid-template-columns: 150px 1fr;
+    }
+    .table-actions {
+        overflow: hidden;
+        width: calc(100vw - 60px);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .customer-date{
+        grid-template-columns: 110px 1fr;
+    }
 }

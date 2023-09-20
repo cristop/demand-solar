@@ -174,7 +174,7 @@ select {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 20px;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 .internal-header .title svg {
@@ -207,7 +207,7 @@ select {
 .gray-container {
     padding: 25px 50px;
     background-color: #F1F1F1;
-    border-radius: 25px;
+    border-radius: 30px;
     font-size: 12px;
     line-height: 1.4;
 }
@@ -237,4 +237,23 @@ select {
     margin: 0;
     color: #666666;
     font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .gray-container{
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .gray-container .section-title{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .gray-container .section-title > div{
+    width: auto;
+  }
 }
