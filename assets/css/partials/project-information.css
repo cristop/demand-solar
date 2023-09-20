@@ -18,6 +18,14 @@
 .customer-date .dates {
 }
 
+.customer-date .dates td {
+    padding-bottom: 5px;
+}
+
+.customer-date .dates td:first-child {
+    padding-right: 10px;
+}
+
 .customer-date .dates img {
     width: 20px;
     height: 20px;
@@ -58,9 +66,13 @@
     padding-right: 5px;
 }
 
+.table-actions td.actions a:hover {
+    opacity: 0.7;
+}
+
 .table-actions td.actions img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 .table-actions tr:last-child td {

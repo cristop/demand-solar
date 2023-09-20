@@ -163,6 +163,16 @@ select {
     background-color: #999;
     overflow: hidden;
     margin-bottom: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 900px) {
+  .internal-header {
+    background-size: calc(100% - 210px) 100%;
+    background-position: left center;
+  }
 }
 
 .internal-header .title {
