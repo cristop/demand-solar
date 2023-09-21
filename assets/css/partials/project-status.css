@@ -1,0 +1,172 @@
+.internal-header{
+    background-size: calc(100% - 197px) 100%;
+}
+.gray-container .section-title > div:last-child{
+    color: #666666;
+}
+.search{
+    
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    margin-bottom: 35px;
+
+}
+.search > div{
+    padding: 3px 10px;
+    border: 1px solid #666666;
+}
+.search > div a {
+    display: flex;
+    gap: 30px;
+    color: #666666;
+    text-decoration: none;
+    font-size: 14px;
+}
+.section-data{
+    justify-content: space-between;
+}
+.section-data .item .completed, .in-progress, .not-started{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+.section-data .completed{
+    color: white;
+    background-color: #3FA8F4;
+}
+.section-data .completed::after{
+    content: url(../../img/project-status/puntitos.svg);
+    display: block;
+    width: 4px;
+    margin: 0 auto;
+} 
+.section-data .in-progress::after{
+    content: url(../../img/project-status/puntitos.svg);
+    display: block;
+    width: 4px;
+    margin: 0 auto;
+} 
+.section-data .not-started::after{
+    content: url(../../img/project-status/puntitos.svg);
+    display: block;
+    width: 4px;
+    margin: 0 auto;
+} 
+.section-data .in-progress{
+    border: 3px solid #3FA8F4;
+    color: #3FA8F4;
+    background-color: white;
+}
+.section-data .not-started{
+    background-color: #CBCBCB;
+    color: #989898;
+}
+.section-data .progress-status{
+    text-align: center;
+    margin-top: 50px;
+}
+strong{
+    font-size: 12px;
+    color: #666666;
+}
+.section-data .progress-status p{
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #666666;
+}
+.footer-table{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    text-align: left;
+}
+.footer-table a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    display: inline-flex;
+    background-color: #989898;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.information-left > :last-child {
+    margin-top: 40px;
+}
+.information-left .bg {
+    background-color: white;
+    text-align: center;
+    padding: 26px;
+}
+.information-left .item .flex > :last-child{
+    border-left: 1px solid #CBCBCB;
+    padding-left: 20px;
+}
+.information-left .item ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 25px;
+}
+.information-left .item ul li{
+    margin-bottom: 10px;
+}
+.information-left .item ul li a{
+    font-size: 14px;
+    font-weight: bold;
+}
+.information-left > :last-child img {
+    width: 21px;
+    height: 23px;
+    margin-right: 8px;
+}
+.information-left > :last-child span {
+    font-size: 14px;
+}
+.additional-data{
+    gap: 30px;
+    margin-top: 40px;
+}
+.information-right .data-note{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #CBCBCB;
+}
+.information-right .item{
+    height: 100%;
+}
+.information-right .bg{
+    background-color: white;
+    text-align: center;
+    padding-top: 26px;
+    height: 100%;
+    padding-bottom: 26px;
+}
+.information-right .data-note > :last-child{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.information-right .data-note a:hover{
+    opacity: 0.7;
+}
+.information-right .item .footer-table {
+    margin-left: 26px;
+}
