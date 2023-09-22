@@ -5,26 +5,128 @@
     color: #666666;
 }
 .search{
-    
+    position: relative;
+    margin-bottom: 35px;
+}
+.search .first-item {
     display: flex;
     justify-content: right;
     gap: 15px;
-    margin-bottom: 35px;
-
+    /* margin-bottom: 35px; */
 }
-.search > div{
-    padding: 3px 10px;
+.search .first-item > div{
+    /* padding: 5px 10px; */
     border: 1px solid #666666;
 }
-.search > div a {
+.search .first-item  a{
     display: flex;
     gap: 30px;
+    padding: 5px 10px;
     color: #666666;
     text-decoration: none;
     font-size: 14px;
 }
 .section-data{
     justify-content: space-between;
+}
+.search .list-projects {
+    min-width: 450px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    display: none;
+}
+.list-projects .bg {
+    text-align: center;
+    padding: 20px;
+    border-radius: 24px 0px 24px 24px;
+    -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
+    background-color: white;
+}
+
+.list-projects .bg .check {
+    text-align: left;
+}
+.search .list-projects p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4D4D4D;
+    text-align: left;
+}
+.search .list-projects .check label{
+    display: inline-flex;
+}
+.search .list-projects .check span {
+    font-size: 12px;
+    color: #4D4D4D;
+}
+.search .list-projects .check input {
+    color: #666666;
+    margin-right: 5px;
+}
+.search .list-projects .btn {
+    background-color: #F1F1F1;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    padding: 13px 42px;
+    margin-top: 20px;
+}
+.search .list-projects .btn a{
+    color: #4D4D4D;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+/**/
+.search .list-filters {
+    min-width: 450px;
+    position: absolute;
+    right: 152px;
+    z-index: 1;
+    display: none;
+}
+.list-filters .bg {
+    text-align: center;
+    padding: 20px;
+    border-radius: 24px 0px 24px 24px;
+    -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
+    background-color: white;
+}
+
+.list-filters .bg .check {
+    text-align: left;
+}
+.search .list-filters p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4D4D4D;
+    text-align: left;
+}
+.search .list-filters .check label{
+    display: inline-flex;
+}
+.search .list-filters .check span {
+    font-size: 12px;
+    color: #4D4D4D;
+}
+.search .list-filters .check input {
+    color: #666666;
+    margin-right: 5px;
+}
+.search .list-filters .btn {
+    background-color: #F1F1F1;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    padding: 13px 42px;
+    margin-top: 20px;
+}
+.search .list-filters .btn a{
+    color: #4D4D4D;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
 }
 .section-data .item .completed, .in-progress, .not-started{
     font-size: 40px;
@@ -136,6 +238,7 @@ strong{
 .additional-data{
     gap: 30px;
     margin-top: 40px;
+    position: relative;
 }
 .information-right .data-note{
     display: flex;
@@ -169,4 +272,40 @@ strong{
 }
 .information-right .item .footer-table {
     margin-left: 26px;
+}
+.information-right .edit-note{
+    position: absolute;
+    top: -150px;
+    left: -60%;
+    min-width: 600px;
+    display: none;
+}
+.information-right .edit-note .bg {
+    padding: 20px;
+    text-align: left;
+    padding: 20px 35px;
+    border-radius: 24px;
+    -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
+    background-color: white;
+}
+.information-right .edit-note .space{
+    border: 1px solid #4D4D4D;
+    height: 160px;
+    margin-top: 20px;
+}
+.information-right .edit-note .btn{
+    /* padding: 0; */
+    position: relative;
+    background-color: #F1F1F1;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    padding: 13px 42px;
+    margin-top: 20px;
+}
+.information-right .edit-note .btn a{
+    color: #4D4D4D;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
 }

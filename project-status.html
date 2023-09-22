@@ -74,8 +74,87 @@
             </div>
           </div>
           <div class="search">
-            <div><a href="#">Filters<img src="assets/img/project-status/arrow-down.svg" width="17" alt=""></a></div>
-            <div><a href="#">Projects<img src="assets/img/project-status/arrow-down.svg" width="17" alt=""></a></div>
+            <div class="first-item">
+              <div id="btn-first"><a href="#">Filters<img src="assets/img/project-status/arrow-down.svg" width="17" alt=""></a></div>
+              <div id="btn-second"><a href="#">Projects<img src="assets/img/project-status/arrow-down.svg" width="17" alt=""></a></div>
+            </div>
+            <div class="list-filters" id="filter-left">
+              <div class="bg">
+                <p>Status of the Project:</p>
+                <div class="check">
+                  <label for="completed">
+                    <input type="checkbox" name="completed" id="completed">
+                    <span>Completed</span>
+                  </label>
+                </div>
+                <div class="check">
+                  <label for="progress">
+                    <input type="checkbox" name="progress" id="progress">
+                    <span>In Progress</span>
+                  </label>
+                </div>
+                <div class="check">
+                  <label for="started">
+                    <input type="checkbox" name="started" id="started">
+                    <span>Not started</span>
+                  </label>
+                </div>
+                <div class="check">
+                  <label for="stopped">
+                    <input type="checkbox" name="stopped" id="stopped">
+                    <span>Stopped</span>
+                  </label>
+                </div>
+                <p>Agent</p>
+                <div class="check">
+                  <label for="stopped">
+                    <input type="checkbox" name="stopped" id="stopped">
+                    <span>Sales Agent 1</span>
+                  </label>
+                </div>
+                <div class="check">
+                  <label for="stopped">
+                    <input type="checkbox" name="stopped" id="stopped">
+                    <span>Sales Agent 2</span>
+                  </label>
+                </div>
+                <div class="check">
+                  <label for="stopped">
+                    <input type="checkbox" name="stopped" id="stopped">
+                    <span>Sales Agent 3</span>
+                  </label>
+                </div>
+                <div class="check">
+                  <label for="stopped">
+                    <input type="checkbox" name="stopped" id="stopped">
+                    <span>Sales Agent 4</span>
+                  </label>
+                </div>
+                <div class="btn">
+                  <a href="#">Add Filters</a>
+                </div>
+              </div>
+            </div>
+            <div class="list-projects" id="project-right">
+              <div class="bg">
+                <p>Select the projects you want to see:</p>
+                <div class="check">
+                  <label for="project">
+                    <input type="checkbox" name="project" id="project">
+                    <span>Project 1</span>
+                  </label>
+                </div>
+                <div class="check">
+                  <label for="project">
+                    <input type="checkbox" name="project" id="project">
+                    <span>Project 2</span>
+                  </label>
+                </div>
+                <div class="btn">
+                  <a href="#">Search</a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="gray-container">
             <div class="section-title flex">
@@ -206,7 +285,7 @@
                       <div>Ejemplo de Nota</div>
                       <div>
                         <div class="date">08/30/2023</div>
-                        <a href="#"><img src="assets/img/project-status/notas.svg" width="25" alt=""></a>
+                        <a href="#" id="add-word"><img src="assets/img/project-status/notas.svg" width="25" alt=""></a>
                         <a href="#"><img src="assets/img/project-information/delete.svg" width="20" alt=""></a>
                       </div>
                     </div>
@@ -214,12 +293,23 @@
                       <div>Ejemplo de Nota</div>
                       <div>
                         <div class="date">08/30/2023</div>
-                        <a href="#"><img src="assets/img/project-status/notas.svg" width="25" alt=""></a>
+                        <a href="#" id="add-word"><img src="assets/img/project-status/notas.svg" width="25" alt=""></a>
                         <a href="#"><img src="assets/img/project-information/delete.svg" width="20" alt=""></a>
                       </div>
                     </div>
                     <div class="footer-table">
                       <a href="#">+</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="edit-note">
+                  <div class="bg">
+                    <strong>Edit Note:</strong>
+                    <div class="space">
+                      <div class="text"></div>
+                    </div>
+                    <div class="btn">
+                      <a href="#">Add Note</a>
                     </div>
                   </div>
                 </div>

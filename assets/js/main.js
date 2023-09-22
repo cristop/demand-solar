@@ -65,3 +65,45 @@ $(document).ready(function () {
       $("#menu-container").toggleClass("menu-open");
   });
 });
+
+//search
+
+const botonMostrarOcultar1 = document.getElementById("btn-first");
+const elementos1 = document.querySelectorAll(".list-filters");
+
+const botonMostrarOcultar2 = document.getElementById("btn-second");
+const elementos2 = document.querySelectorAll(".list-projects");
+
+const btnNotes = document.getElementById("add-word");
+const element3 = document.querySelectorAll(".edit-note");
+
+botonMostrarOcultar1.addEventListener("click", () => {
+    elementos1.forEach(elemento => {
+        if (elemento.style.display === "none" || elemento.style.display === "") {
+            elemento.style.display = "block";
+        } else {
+            elemento.style.display = "none";
+        }
+    });
+});
+
+botonMostrarOcultar2.addEventListener("click", () => {
+    elementos2.forEach(elemento => {
+        if (elemento.style.display === "none" || elemento.style.display === "") {
+            elemento.style.display = "block";
+        } else {
+            elemento.style.display = "none";
+        }
+    });
+});
+
+btnNotes.addEventListener("click", () => {
+  element3.forEach(elemento => {
+      if (elemento.style.display === "none" || elemento.style.display === "") {
+          elemento.style.display = "block";
+      } else {
+          elemento.style.display = "none";
+      }
+  });
+});
+
