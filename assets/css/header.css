@@ -395,7 +395,6 @@ header .logo-center{
     border-radius: 0;
     margin: 0;
     padding-top: 140px;
-    padding-bottom: 70px;
     opacity: 0;
     pointer-events: none;
     -webkit-transition: all 0.2s ease;
@@ -404,11 +403,15 @@ header .logo-center{
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
     position: initial;
+    height: 0;
+    padding-bottom: 0;
   }
 
   .menu-info .menu-left.menu-open ul {
       opacity: 1;
       pointer-events: initial;
+      height: auto;
+      padding-bottom: 70px;
   }
   
   .menu-info .menu-left li{

@@ -66,44 +66,48 @@ $(document).ready(function () {
   });
 });
 
-//search
+/////////////////////////////////////////////////////////
+//filter
+const botones = [$("#btn-first"), $("#btn-second"), $(".add-word"), $(".add-new-note")];
+const elementos = [$(".list-filters"), $(".list-projects"), $(".edit-note"), $(".new-note")];
 
-const botonMostrarOcultar1 = document.getElementById("btn-first");
-const elementos1 = document.querySelectorAll(".list-filters");
-
-const botonMostrarOcultar2 = document.getElementById("btn-second");
-const elementos2 = document.querySelectorAll(".list-projects");
-
-const btnNotes = document.getElementById("add-word");
-const element3 = document.querySelectorAll(".edit-note");
-
-botonMostrarOcultar1.addEventListener("click", () => {
-    elementos1.forEach(elemento => {
-        if (elemento.style.display === "none" || elemento.style.display === "") {
-            elemento.style.display = "block";
-        } else {
-            elemento.style.display = "none";
-        }
+// Función para cerrar los elementos cuando se hace clic en cualquier lugar de la pantalla
+function closeElements() {
+  elementos.forEach(function (elemento) {
+    elemento.each(function () {
+      $(this).hide();
     });
-});
+  });
 
-botonMostrarOcultar2.addEventListener("click", () => {
-    elementos2.forEach(elemento => {
-        if (elemento.style.display === "none" || elemento.style.display === "") {
-            elemento.style.display = "block";
+  botones.forEach(function (boton) {
+    boton.removeClass("open");
+  });
+}
+
+
+$(document).ready(function () {
+  // Asignar eventos click a cada botón
+  botones.forEach(function (boton, indice) {
+    boton.on("click", function (event) {
+      elementos.forEach(function (elemento, i) {
+        if (i === indice) {
+          elemento.toggle();
+          boton.toggleClass("open");
         } else {
-            elemento.style.display = "none";
+          elemento.hide();
+          botones[i].removeClass("open");
         }
-    });
-});
+      });
 
-btnNotes.addEventListener("click", () => {
-  element3.forEach(elemento => {
-      if (elemento.style.display === "none" || elemento.style.display === "") {
-          elemento.style.display = "block";
-      } else {
-          elemento.style.display = "none";
-      }
+      event.stopPropagation();
+      return false;
+    });
+  });
+
+  // Agregar un controlador de eventos clic al documento para cerrar los elementos abiertos
+  $(document).on("click", function (event) {
+    if (!$(event.target).closest(".list-filters, .list-projects, .edit-note").length) {
+      closeElements();
+    }
   });
 });
-
