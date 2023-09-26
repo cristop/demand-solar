@@ -40,7 +40,7 @@
 .search .list-projects {
     min-width: 450px;
     position: absolute;
-    right: 0;
+    right: 20px;
     z-index: 2;
     display: none;
 }
@@ -90,7 +90,7 @@
 .search .list-filters {
     min-width: 450px;
     position: absolute;
-    right: 141px;
+    right: 161px;
     z-index: 1;
     display: none;
 }
@@ -401,9 +401,9 @@ a.add-word.open img {
         gap: 35px;
     }
 
-.section-data .item {
-    min-width: 77px;
-}
+    .section-data .item {
+        min-width: 77px;
+    }
     .section-data .item:before{
         right: -32px;
         /* width: 24px; */
@@ -415,7 +415,22 @@ a.add-word.open img {
         width: 50px;
         height: 50px;
         font-size: 33px;
-        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .search .list-projects{
+        min-width: initial;
+    }
+    .search .list-filters{
+        min-width: initial;
+        right: 161px;
+    }
+    .edit-note,
+    .new-note{
+        width: calc(100% - 40px);
+        min-width: initial;
+    }
 }
 
 .step-projects {
