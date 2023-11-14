@@ -1,0 +1,37 @@
+:root{
+    --c-primary: #FFB800;
+    --c-secondary: #5E7E4F;
+    --c-terciary: #7A6082;
+    --c-fourth: #5D788C;
+
+    --f-primary: brightness(0) invert(77%) sepia(37%) saturate(3588%) hue-rotate(358deg) brightness(103%) contrast(103%);
+    --f-secondary: brightness(0) invert(49%) sepia(9%) saturate(1718%) hue-rotate(57deg) brightness(88%) contrast(79%);
+    --f-terciary: brightness(0) invert(42%) sepia(3%) saturate(5049%) hue-rotate(240deg) brightness(88%) contrast(73%);
+    --f-fourth: brightness(0) invert(46%) sepia(41%) saturate(280%) hue-rotate(163deg) brightness(89%) contrast(89%);
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+}
+.lexend{
+    font-family: 'Lexend', sans-serif;
+}
+
+header {
+    display: block;
+    color: white;
+    background-image: url(../img/Portada.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+section.lists {
+    background-image: url(../img/SOW.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
