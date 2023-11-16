@@ -1,224 +1,245 @@
-:root{
-    --c-primary: #FFB800;
-    --c-secondary: #5E7E4F;
-    --c-terciary: #7A6082;
-    --c-fourth: #5D788C;
-
-    --f-primary: brightness(0) invert(77%) sepia(37%) saturate(3588%) hue-rotate(358deg) brightness(103%) contrast(103%);
-    --f-secondary: brightness(0) invert(49%) sepia(9%) saturate(1718%) hue-rotate(57deg) brightness(88%) contrast(79%);
-    --f-terciary: brightness(0) invert(42%) sepia(3%) saturate(5049%) hue-rotate(240deg) brightness(88%) contrast(73%);
-    --f-fourth: brightness(0) invert(46%) sepia(41%) saturate(280%) hue-rotate(163deg) brightness(89%) contrast(89%);
+:root {
+  --c-primary: #ffb800;
+  --c-secondary: #5e7e4f;
+  --c-terciary: #7a6082;
+  --c-fourth: #5d788c;
+  --f-primary: brightness(0) invert(77%) sepia(37%) saturate(3588%)
+    hue-rotate(358deg) brightness(103%) contrast(103%);
+  --f-secondary: brightness(0) invert(49%) sepia(9%) saturate(1718%)
+    hue-rotate(57deg) brightness(88%) contrast(79%);
+  --f-terciary: brightness(0) invert(42%) sepia(3%) saturate(5049%)
+    hue-rotate(240deg) brightness(88%) contrast(73%);
+  --f-fourth: brightness(0) invert(46%) sepia(41%) saturate(280%)
+    hue-rotate(163deg) brightness(89%) contrast(89%);
 }
-body{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
 }
-
-.lexend{
-    font-family: 'Lexend', sans-serif;
+.lexend {
+  font-family: Lexend, sans-serif;
 }
-
-a{
-    color: inherit;
+a {
+  color: inherit;
 }
-a:hover{
-    opacity: 0.5
+a:hover {
+  opacity: 0.5;
 }
-
 header {
-    display: block;
-    color: white;
-    background-image: url(../img/Portada.jpg);
-    background-position: center;
-    background-size: cover;
-    padding-top: 15px;
-    padding-bottom: 10px;
+  display: block;
+  color: white;
+  background-image: url("../img/Portada.jpg");
+  background-position: center center;
+  background-size: cover;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
-
 section.lists {
-    background-image: url(../img/SOW.jpg);
-    background-position: center;
-    background-size: cover;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: white;
+  background-image: url("../img/SOW.jpg");
+  background-position: center center;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
 }
-
 section.lists .title {
-    margin: 0;
-    margin-bottom: 20px;
-    font-family: Lexend;
-    font-size: 27px;
-    font-style: normal;
-    font-weight: 400;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 50px 1fr;
-    gap: 0px 12px;
+  margin: 0px 0px 20px;
+  font-family: Lexend;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50px 1fr;
+  gap: 0px 12px;
 }
-
 h3.title img {
-    height: 50px;
-    object-fit: contain;
-    margin-left: auto;
-    margin-right: auto;
+  height: 50px;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 section.lists .title small {
-    display: block;
-    grid-column-start: 2;
-    font-size: 15px;
-    line-height: 0;
+  display: block;
+  grid-column-start: 2;
+  font-size: 15px;
+  /* line-height: 0; */
 }
-
 .radius-left {
-    border-radius: 0px 50px 50px 0px;
-    background: linear-gradient(180deg, rgba(20, 20, 20, 0.34) 0%, rgba(14, 14, 14, 0.34) 100%);
-    backdrop-filter: blur(17.200000762939453px);
-    background-color: red;
+  border-radius: 0px 50px 50px 0px;
+  background: linear-gradient(
+      rgba(20, 20, 20, 0.34) 0%,
+      rgba(14, 14, 14, 0.34) 100%
+    )
+    red;
+  backdrop-filter: blur(17.2px);
 }
-
 .radius-right {
-    background: linear-gradient(2deg, rgba(20, 20, 20, 0.34) 98.07%, rgba(0, 0, 0, 0.34) 151.09%, rgba(26, 26, 26, 0.34) 151.09%);
-    backdrop-filter: blur(17.200000762939453px);
-    background-color: red;
-    border-radius: 50px 0px 0px 50px;
+  background: linear-gradient(
+      2deg,
+      rgba(20, 20, 20, 0.34) 98.07%,
+      rgba(0, 0, 0, 0.34) 151.09%,
+      rgba(26, 26, 26, 0.34) 151.09%
+    )
+    red;
+  backdrop-filter: blur(17.2px);
+  border-radius: 50px 0px 0px 50px;
 }
-
 .radius-left,
-.radius-right{
-    padding: 15px 25px;
+.radius-right {
+  padding: 15px 25px;
 }
-
 .table1 {
-    padding-bottom: 30px;
-    font-size: 14px;
+  padding-bottom: 30px;
+  font-size: 14px;
 }
-
 @media screen and (min-width: 900px) {
-    .table1 {
-        margin-left: 60px;
-    }
+  .table1 {
+    margin-left: 60px;
+  }
 }
-
 .table1 table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 1px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1px;
 }
-
-.table1 table th,.table1 table td {
-    padding: 6px 14px;
+.table1 table th,
+.table1 table td, .table2 table th,
+.table2 table td {
+  padding: 6px 14px;
 }
-
 .table1 table .icon {
-    min-width: 32px;
-    width: 32px;
-    max-width: 32px;
-    padding-left: 7px;
-    padding-right: 7px;
+  min-width: 32px;
+  width: 32px;
+  max-width: 32px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
-
-.table1 table th {
-    border-radius: 7.215px;
-    background: rgba(197, 197, 197, 0.34);
-    text-align: left;
-    position: relative;
+.table1 table th, .table2 table th {
+  border-radius: 7.215px;
+  background: rgba(197, 197, 197, 0.34);
+  text-align: left;
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
-
-.table1 table td{
-    border-radius: 7.215px;
-    background: rgba(120, 120, 120, 0.5);
-    backdrop-filter: blur(5.411508560180664px);
-    font-weight: 300;
+.table1 table td {
+  border-radius: 7.215px;
+  background: rgba(120, 120, 120, 0.5);
+  backdrop-filter: blur(5.41151px);
+  font-weight: 300;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
 }
-
 .table1 table tr td.table-total {
-    background-color: gray !important;
+  background-color: gray !important;
 }
-
 .table1 table tr td.table-total .flex {
-    margin: 0;
+  margin: 0px;
 }
-
+.table1 table tr td.table-total, .table1 table td.table-title{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
 .table1 table td.table-title {
-    border-radius: 7.215px;
-    background: rgba(79, 79, 79, 0.52) !important;
-    backdrop-filter: blur(5.411508560180664px);
-    font-weight: 600;
-    width: 100%;
+  border-radius: 7.215px;
+  backdrop-filter: blur(5.41151px);
+  font-weight: 600;
+  width: 100%;
+  background: rgba(79, 79, 79, 0.52) !important;
 }
-
-.table1 table td.table-title:before{
-    content: "";
-    width: 10px;
-    height: 100%;
-    position: absolute;
-    left: 0px;
-    top: 0;
-    backdrop-filter: blur(5.411508560180664px);
-    border-radius: 7.215px;
-    background-color: gray;
+.table1 table td.table-title::before {
+  content: "";
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  backdrop-filter: blur(5.41151px);
+  border-radius: 7.215px;
+  background-color: gray;
 }
-
-.table1 table tr{
+.table1 table tr {
 }
-
 .table1 table tr td:first-child:not(.icon) {
-    background-color: transparent;
+  background-color: transparent;
 }
-
-.table1 table th:first-child{
-    padding-left: 20px;
+.table1 table th:first-child, .table2 table th:first-child {
+  padding-left: 20px;
 }
-
-.table1 table th:first-child:before{
-    content: "";
-    background-color: gray;
-    display: block;
-    width: 21px;
-    height: 100%;
-    position: absolute;
-    left: -10px;
-    top: 0;
-    backdrop-filter: blur(5.411508560180664px);
-    border-radius: 7.215px;
+.table1 table th:first-child::before {
+  content: "";
+  background-color: gray;
+  display: block;
+  width: 21px;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+  backdrop-filter: blur(5.41151px);
+  border-radius: 7.215px;
 }
-
-.table1.table-c-primary table th:first-child:before,
-.table1.table-c-primary table td.table-title:before,
-.table1.table-c-primary table tr td.table-total{
-    background-color: var(--c-primary) !important;
+.table1.table-c-primary table th:first-child::before,
+.table1.table-c-primary table td.table-title::before,
+.table1.table-c-primary table tr td.table-total {
+  background-color: var(--c-primary) !important;
 }
-
-.table1.table-c-secondary table th:first-child:before,
-.table1.table-c-secondary table td.table-title:before,
-.table1.table-c-secondary table tr td.table-total{
-    background-color: var(--c-secondary) !important;
+.table1.table-c-secondary table th:first-child::before,
+.table1.table-c-secondary table td.table-title::before,
+.table1.table-c-secondary table tr td.table-total {
+  background-color: var(--c-secondary) !important;
 }
-
-.table1.table-c-terciary table th:first-child:before,
-.table1.table-c-terciary table td.table-title:before,
-.table1.table-c-terciary table tr td.table-total{
-    background-color: var(--c-terciary) !important;
+.table1.table-c-terciary table th:first-child::before,
+.table1.table-c-terciary table td.table-title::before,
+.table1.table-c-terciary table tr td.table-total {
+  background-color: var(--c-terciary) !important;
 }
-
-.table1.table-c-fourth table th:first-child:before,
-.table1.table-c-fourth table td.table-title:before,
-.table1.table-c-fourth table tr td.table-total{
-    background-color: var(--c-fourth) !important;
+.table1.table-c-fourth table th:first-child::before,
+.table1.table-c-fourth table td.table-title::before,
+.table1.table-c-fourth table tr td.table-total {
+  background-color: var(--c-fourth) !important;
 }
-
-table input{
-    background-color: transparent;
-    border: 0;
-    color: white;
-    /* max-width: 70px; */
-    width: 100%;
+table input {
+  background-color: transparent;
+  border: 0px;
+  color: white;
+  width: 100%;
 }
-
 input:focus {
-  outline: 0; /* Establece un contorno azul en el foco */
-  box-shadow: 0; /* Agrega una sombra suave al foco */
-  /* Otros estilos adicionales según tus necesidades */
+  outline: 0px;
+}
+.table2 table th:first-child::before{
+  content: "";
+  background-color: var(--c-primary);
+  display: block;
+  width: 11px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  backdrop-filter: blur(5.41151px);
+  border-radius: 7.215px;
+}
+.table2 table{
+  width: 100%;
+}
+.table2 table th {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.table2 table .titulo-datos{
+  background: rgba(73, 73, 73, 1)!important;
+}
+.table2 table td{
+  background: rgba(79, 79, 79, 0.52) !important;
+}
+.table2.datos-venta table tr{}
+.table2.datos-venta table tbody > :last-child{
+    background: rgba(77, 77, 77, 0.57);
+}
+.table2 table.decision{
+    width: auto;
 }
