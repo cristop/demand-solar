@@ -13,18 +13,19 @@
 <body>
     <header>
         <div class="container-fluid">
-            <div class="grid d-col-3">
+            <div class="flex">
                 <div>
                     <img src="./assets/img/logo-demand.png" alt="">
                 </div>
-                <div class="text-center lexend">
+                <div class="text-center lexend w150">
                     <h1 class="principal-title">Your Installation <span class="c-primary">PLAN</span></h1>
                 </div>
+                <div></div>
             </div>
             <div class="flex">
-                <div class="flex">
+                <div class="flex m-col-2">
                     <div class="auto">
-                        NOLAN M.
+                        <span class="lexend name">NOLAN M.</span>
                     </div>
                     <div class="auto">
                         1234 Elm Street <br>
@@ -39,10 +40,12 @@
                         Job ID: F053676
                     </div>
                 </div>
-                <div class="flex flex-right">
-                    <div class="auto">Your representative:</div>
+                <div class="flex flex-right  m-col-2">
+                    <div class="auto" style="font-size: 24px;">
+                      Your representative:
+                    </div>
                     <div class="auto">
-                        Clayton Rodriguez <br>
+                        <span style="font-size: 20px;">Clayton Rodriguez</span> <br>
                         <a href="mailto:claytonsmith99@yahoo.com">ClaytonSmith99@yahoo.com</a>
                     </div>
                     <div class="auto">
@@ -288,6 +291,8 @@
                         <small>This is an estimate of expenses. Actual expenses are subject to change</small>
                     </h3>
 
+                    <br>
+
                     <div class="table2">
                       <table border="0" cellpadding="0" cellspacing="0">
                         <tr>
@@ -322,48 +327,123 @@
                       <br><br>
                     </div>
 
-                    <div class="table2 datos-venta">
-                      <table border="0" cellpadding="0" cellspacing="0">
-                        <tr>
-                          <td>Sold PPW:</td>
-                          <td>3.2317</td>
-                        </tr>
-                        <tr>
-                          <td>Net PPW:</td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>Dealer Fee</td>
-                          <td>3.2317</td>
-                        </tr>
-                        <tr>
-                          <td>Finance</td>
-                          <td>11.30</td>
-                        </tr>
-                        <tr>
-                          <td>PowerSwitch Choice 9 a 25 1059 N30 v2</td>
-                        </tr>
-                      </table>
-                      <br><br>
+                    <div class="totals flex m-col-2">
+                      <div>Sold PPW:</div>
+                      <div>3.2317</div>
+                    </div>
+                    <div class="totals flex m-col-2">
+                      <div>Net PPW:</div>
+                      <div></div>
+                    </div>
+                    <div class="totals flex m-col-2">
+                      <div>Dealer Fee</div>
+                      <div>3.2317</div>
+                    </div>
+                    <div class="totals flex m-col-2">
+                      <div>Finance</div>
+                      <div>11.30</div>
+                    </div>
+                    <div class="powerswitch">
+                      PowerSwitch Choice 9 a 25 1059 N30 v2
                     </div>
 
-                    <div class="table2">
-                        <table border="0" cellpadding="0" cellspacing="0">
-                          <tr>
-                            <th colspan="6">DECISION</th>
-                          </tr>
-                        </table>
-                        <table class="decision" border="0" cellpadding="0" cellspacing="0">
-                          <tr>
-                            <td>
-                              <div data-control="input" data-kind="decimal" class="">
-                                <img src="" >
-                                <label>Base PPW</b>
-                                <input type="text" />
-                            </div>
-                            </td>
-                          </tr>
-                        </table>
+                    <br><br><br>
+
+                    <div class="title-black-tables">DECISION</div>
+
+                    <div class="grid d-col-3 grid-decicion">
+                      <div>
+                        <div data-control="input" data-kind="decimal" class="color-secondary">
+                            <img src="./assets/img/base_items.svg" >
+                            <label>Base Items</label>
+                            <input type="text" value="11.30" />
+                        </div>
+                      </div>
+                      <div>
+                        <div data-control="input" data-kind="decimal" class="color-secondary">
+                            <img src="./assets/img/base_items.svg" >
+                            <label>Base PPW</label>
+                            <input type="text" value="11.30" />
+                        </div>
+                      </div>
+                      <div></div>
+
+                      <div>
+                        <div data-control="input" data-kind="decimal" class="color-terciary">
+                            <img src="./assets/img/customer-items.svg" >
+                            <label>Customer Items</label>
+                            <input type="text" value="11.30" />
+                        </div>
+                      </div>
+                      <div>
+                        <div data-control="input" data-kind="decimal" class="color-terciary">
+                            <img src="./assets/img/customer-items.svg" >
+                            <label>Customer PPW</label>
+                            <input type="text" value="11.30" />
+                        </div>
+                      </div>
+                      <div>
+                        <div data-control="input" data-kind="decimal" class="color-primary">
+                            <img src="./assets/img/customer-items.svg" >
+                            <label>Customer New Total</label>
+                            <input type="text" value="11.30" />
+                        </div>
+                      </div>
+
+
+                      <div>
+                        <div data-control="input" data-kind="decimal" class="color-fourth">
+                            <img src="./assets/img/sales-agent.svg" >
+                            <label>Sales Agent Items</label>
+                            <input type="text" value="11.30" />
+                        </div>
+                      </div>
+                      <div>
+                        <div data-control="input" data-kind="decimal" class="color-fourth">
+                            <img src="./assets/img/sales-agent.svg" >
+                            <label>Sales Agent PPW</label>
+                            <input type="text" value="11.30" />
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="grid d-col-3 grid-decicion-totals">
+                      <div>
+                        <div data-control="input2" data-kind="decimal" class="color-primary">
+                          <label>TOTAL</label>
+                          <input type="text" value="11.30" />
+                        </div>
+                      </div>
+                      <div>
+                        <div data-control="input2" data-kind="decimal" class="color-primary">
+                          <label>TOTAL PPW</label>
+                          <input type="text" value="11.30" />
+                        </div>
+                      </div>
+                      <div></div>
+
+                      <div></div>
+                      <div>
+                        <div data-control="input3" data-kind="decimal" class="color-primary">
+                          <label>TOTAL PPW</label>
+                          <input type="text" value="11.30" />
+                          <a href="#"><img src="./assets/img/back_arrow.svg" alt="" /></a>
+                        </div>
+                      </div>
+                      <div></div>
+
+                      <div></div>
+                      <div>
+                        <div data-control="input3" data-kind="decimal" class="color-primary">
+                          <label>NET PPW</label>
+                          <input type="text" value="11.30" />
+                          <a href="#"><img src="./assets/img/back_arrow.svg" alt="" /></a>
+                        </div>
+                      </div>
+                      <div></div>
+
+
                     </div>
                 </div>
             </div>
